@@ -1,0 +1,42 @@
+<!-- 다음에 오는 element -->
+<!doctype html>
+<html>
+<head>
+    <style>
+        /* 형제 selector () */
+        h2 + p{
+            background-color: gold;
+
+        }
+        h1 + p{
+            background-color: skyblue;
+
+        }
+        div > p{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- (h1>lorem1^p>lorem)+(h2>lorem1^P>lorem) -->
+    <h1>Lorem.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis ut iusto quae enim iure, minus saepe quasi explicabo alias cupiditate. Quis reiciendis neque blanditiis sequi dolorem nisi qui quisquam ipsum.</p>
+    <h2>Lorem.</h2>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos repudiandae sequi, non natus corporis provident odio id tenetur, perspiciatis quam reprehenderit fugiat quasi sed pariatur? Ea, quam unde. Rerum!</P>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, esse quo! Labore soluta eius a provident tempore, adipisci aliquid beatae sapiente cumque minima magni ab dolor? Officiis vero hic velit.</p>
+    </div>
+
+    <!-- table>thead+tbody -->
+    <table>
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- h1+p -->
+    <h1></h1>
+    <p></p>
+</body>
+</html>
+
+<!-- >(안쪽에) 와 +(다음에) 의 차이 -->

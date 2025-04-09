@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .kirin{
+            border: dotted 5px green;
+        }
+        .koko{
+            background-color: gray;
+        }
+        h1.kirin{ /* 띄어쓰기 하면 안 됨*/
+            color: white;
+        }
+        p.kirin{
+            color: yellow;
+        }
+        h1.kirin.koko{
+            width: 200px;
+        }
+        .kirin.koko{
+            height: 100px;
+        }
+        .koko.kirin{
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1.kirin>lorem2 -->
+    <h1 class="kirin">Lorem.</h1>
+    <h1 class="koko">Lorem.</h1>
+
+    <!-- h1.kirin>lorem1^p.kirin>lorem3 -->
+    <h1 class="kirin koko">Lorem.</h1>
+    <p class="kirin">Lorem, ipsum dolor.</p>
+</body>
+</html>
