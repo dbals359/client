@@ -1,0 +1,110 @@
+<!-- table -->
+<table style="border: 1px solid black; 
+            border-collapse: collapse; 
+            width: 200px;"> <!-- table 안에 3행(tr) 2열(td)이 있음.-->
+    <tr>
+        <td style="border: 1px solid black;">Lorem.</td>
+        <td style="border: 1px solid black;">Lorem.</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Lorem.</td>
+        <td style="border: 1px solid black;">Lorem.</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Lorem.</td>
+        <td style="border: 1px solid black;">Lorem.</td>
+    </tr>
+</table>
+
+<hr>
+<!-- 2행 3열 테이블 만들기 -->
+<table style="border: 1px solid black; 
+            border-collapse: collapse;
+            width: 200px;"> <!-- table 안에 3행(tr) 2열(td)이 있음.-->
+    <tr>
+        <td style="border: 1px solid black;">Lorem.</td>
+        <td style="border: 1px solid black;">Lorem.</td>
+        <td style="border: 1px solid black;">Lorem.</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Lorem.</td>
+        <td style="border: 1px solid black;">Lorem.</td>
+        <td style="border: 1px solid black;">Lorem.</td>
+    </tr>
+</table>
+
+<!-- border-collapse는 간격조정하는것 -->
+<hr>
+<!-- 제목 셀 th -->
+<table style="border: 1px solid black; 
+            border-collapse: collapse;
+            width: 250px;">
+    <!-- tr*3>td*2>lorem tap -->
+    <tr>
+        <th style="border: 1px solid black;">Lorem.</th>
+        <th style="border: 1px solid black;">Doloremque.</th>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Lorem.</td>
+        <td style="border: 1px solid black;">Libero.</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Lorem.</td>
+        <td style="border: 1px solid black;">Quam!</td>
+    </tr>
+</table>
+
+<hr>
+<!-- 4행 3열 테이블 만들기, 첫번째 행은 제목셀들로 만들기 -->
+ <!-- table>tr*1>th*3>lorem1^^tr*3>td*3>lorem1 tap  이렇게도 할 수 있음-->
+<table style="border: 1px solid black; 
+            border-collapse: collapse;
+            width: 300px;">
+    <tr>
+        <th style="border: 1px solid black;">Lorem.</th>
+        <th style="border: 1px solid black;">Voluptatibus.</th>
+        <th style="border: 1px solid black;">Nisi.</th>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Lorem.</td>
+        <td style="border: 1px solid black;">Quos?</td>
+        <td style="border: 1px solid black;">Nemo.</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Lorem.</td>
+        <td style="border: 1px solid black;">Odit.</td>
+        <td style="border: 1px solid black;">Assumenda!</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Lorem.</td>
+        <td style="border: 1px solid black;">Totam!</td>
+        <td style="border: 1px solid black;">Accusamus.</td>
+    </tr>
+</table>
+<!-- 검사들어가면 tbody가 나옴 즉 아래에-->
+
+<table>
+    <thead>
+        <!-- tr>th*2>lorem0 tap -->
+        <tr>
+            <th>Lorem.</th>
+            <th>Lorem.</th>
+        </tr>
+    </thead>
+    <!-- tbody 필수 태그 ! ! ! -->
+    <tbody>
+        <!-- tr*3>td*2>lorem0 tap -->
+        <tr>
+            <td>Lorem.</td>
+            <td>Placeat!</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Id!</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Velit.</td>
+        </tr>
+    </tbody>
+</table>
