@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- html>head>style^body -->
+<html>
+<head>
+    <style>
+        /* id, class(pseudo), element -> 우선순위 순서대로 1 2 3 */
+        h1{
+            background-color: skyblue;
+        }
+        /* class가 여러개일수록 우선순위 높아짐 */
+        .head{
+            background-color: beige;
+        }
+        .head.note{
+            background-color: yellow;
+        }
+        
+        #header1{
+            background-color: blue;
+        }
+        .head.note:hover{
+            background-color: orange;
+        }
+        #header1.head{
+            background-color: gold;
+        }
+
+        /* 같은 점수면 아래에 있는 것 */
+        .head{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1*10>lorem1 -->
+    <h1>Lorem.</h1>
+    <h1 class="head">Magni.</h1>
+    <h1 class="head note">At?</h1>
+    <h1 id="header1" class="head note">Consectetur?</h1>
+    <h1>Nulla.</h1>
+    <h1>Velit?</h1>
+    <h1>Quos!</h1>
+    <h1>Blanditiis.</h1>
+    <h1>Facilis?</h1>
+    <h1>Odio!</h1>
+</body>
+</html>
