@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .head {
+            background-color: skyblue;
+        }
+        /* class가 head1인 요소 */
+        .head1 {
+            background-color: blue;
+        }
+        /* id가 head1인 요소 */
+        #head1{
+            background-color: red;
+        }
+        #head2{
+            background-color: orange;
+        }
+        #text1{
+            background-color: cornsilk;
+        }
+        #header98{
+            background-color: yellow;
+        }
+        #header4{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="head">Lorem.</h1>
+    <h1 class="head">Magnam!</h1>
+    <h1 class="head1">Nesciunt!</h1>
+    <!-- 특정 요소만 선택하기 위한거라서 id는 같으면 안 됨. -->
+    <!-- id : 특정 요소 하나를 명시함 -->
+    <!-- 다른 요소와 같은 값을 가질 수 없음 -->
+    <h1 id="head1">Laborum.</h1>
+    <h1 id="head2">Error.</h1>
+    <h1 id="text1">Accusamus.</h1>
+    <h1 id="header98">Excepturi.</h1>
+    
+    <h1 class="head1 head2">Voluptatibus!</h1>
+    <!-- id가 여러 값 또는 같은 값을 가질 수 없음 -->
+     <!-- 오류는 안 뜨는데 이렇게 쓰면 안 됨 -->
+    <h1 id="header77 header55">At.</h1>
+    <h1 id="header4">Molestiae.</h1>
+    <h1 id="header4">Facere?</h1>
+    <h1>Quam?</h1>
+    <h1>Exercitationem.</h1>
+    <h1>Est?</h1>
+    <h1>Recusandae?</h1>
+    <h1>At.</h1>
+    <h1>Soluta!</h1>
+    <h1>Dicta.</h1>
+    <h1>Eum?</h1>
+    <h1>Fugiat!</h1>
+</body>
+
+</html>
