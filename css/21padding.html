@@ -1,0 +1,146 @@
+<!-- ! tap -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 여기에 스타일 -->
+    <style>
+        h1 {
+            width: 200px;
+            height: 100px;
+            border: 5px solid black;
+        }
+
+        h1:nth-child(odd) {
+            background-color: orange;
+        }
+
+        h1:nth-child(even) {
+            background-color: deepskyblue;
+        }
+
+        #head1 {
+            /* content area-테두리 사이 간격 */
+            padding: 10px;
+        }
+
+        #head2 {
+            /* 모든 간격 동일 */
+            padding: 15px;
+        }
+
+        #head3 {
+            padding-top: 15px;
+        }
+
+        #head4 {
+            padding-bottom: 17px;
+        }
+
+        #head5 {
+            padding-left: 15px;
+        }
+
+        #head6 {
+            padding-right: 17px;
+        }
+
+        #head7 {
+            padding-left: 3px;
+            padding-top: 6px;
+            padding-bottom: 9px;
+            padding-right: 8px;
+        }
+
+        #head8 {
+            /* 위 오른쪽 아래 왼쪽 : 시계방향 */
+            padding: 12px 14px 16px 18px;
+        }
+
+        #head9 {
+            /* 위 좌우 아래 */
+            padding: 3px 5px 7px;
+        }
+
+        #head10 {
+            /* 상하 좌우 */
+            padding: 2px 4px;
+        }
+
+        h3:nth-child(odd){
+            background-color: red;
+        }
+        h3:nth-child(even){
+            background-color: blue;
+        }
+        h3{
+            border: solid 7px;
+        }
+        #head12{
+            padding: 10px;
+        }
+        #head13{
+            padding-top: 11px;
+        }
+        #head14{
+            padding-bottom: 13px;
+        }
+        #head15{
+            padding-left: 15px;
+        }
+        #head16{
+            padding-right: 17px;
+        }
+        #head17{
+            padding: 12px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- h1#head$*10>lorem1 -->
+    <h1 id="head1">Lorem.</h1>
+    <h1 id="head2">Vitae.</h1>
+    <h1 id="head3">Qui.</h1>
+    <h1 id="head4">Amet?</h1>
+    <h1 id="head5">Nostrum.</h1>
+    <h1 id="head6">Deleniti.</h1>
+    <h1 id="head7">Eum?</h1>
+    <h1 id="head8">Eaque.</h1>
+    <h1 id="head9">Iste?</h1>
+    <h1 id="head10">Beatae.</h1>
+
+    <hr>
+    <!-- h3#head$@12*10>lorem0 -->
+    <!-- h3 홀수번째 배경: red -->
+    <!-- h3 짝수번째 배경: blue -->
+    <!-- h3 테두리 7px -->
+
+    <!-- 4방향 패딩 10px -->
+    <h3 id="head12">Lorem.</h3>
+
+    <!-- 위 패딩 11px -->
+    <h3 id="head13">Facere!</h3>
+
+    <!-- 아래 패딩 13px -->
+    <h3 id="head14">Dolores?</h3>
+
+    <!-- 왼쪽 패딩 15px -->
+    <h3 id="head15">Fugiat!</h3>
+
+    <!-- 오른쪽 패딩 17px -->
+    <h3 id="head16">Ex?</h3>
+
+    <!-- 좌우 20, 상하 12 -->
+    <h3 id="head17">Autem.</h3>
+
+    <h3 id="head18">Sunt.</h3>
+    <h3 id="head19">Quisquam?</h3>
+    <h3 id="head20">Error?</h3>
+    <h3 id="head21">Reprehenderit.</h3>
+</body>
+
+</html>
