@@ -1,0 +1,60 @@
+<!-- pseudo 수도 : 가짜의, 허위의 : 없는데 있는 것처럼 쓰는 것 -->
+<!DOCTYPE html>
+<!-- html>head>style^body -->
+<html>
+<head>
+    <style>
+        /* pseudo class :  */
+        h1:nth-child(odd){
+            background-color: blue;
+        }
+        h1.head{
+            color: yellow;
+        }
+
+        /* nth-child 특정 순서의 자식 */
+        h1:nth-child(1){
+            border: 5px solid green;
+        }
+        h1:nth-child(2){
+            border: 9px dotted red;
+        }
+        /* 선택자:nth-child(숫자 또는 공식) 이렇게 쓰는겨 */
+    </style>
+</head>
+<body>
+    <!-- h1*20>lorem0 -->
+    <h1 class="head">Lorem.</h1>
+    <h1 class="head">Corrupti!</h1>
+    <h1>Aperiam!</h1>
+    <h1>Nisi.</h1>
+    <h1>Voluptas!</h1>
+    <h1>Laudantium!</h1>
+    <h1>Qui?</h1>
+    <h1>Magni!</h1>
+    <h1>Voluptate.</h1>
+    <h1>Delectus.</h1>
+    <h1>Laborum.</h1>
+    <h1>Consequatur?</h1>
+    <h1>Ducimus?</h1>
+    <h1>Quam.</h1>
+    <h1>Incidunt?</h1>
+    <h1>Sunt?</h1>
+    <h1>Ad.</h1>
+    <h1>Rerum.</h1>
+    <h1>Sed.</h1>
+    <h1>Totam.</h1>
+
+    <!-- div>h1*5>lorem1 -->
+     <!-- div는 21번째 자식 -->
+    <div>
+        <!-- h1은 div에서 1번 째 자식이므로 위에 녹색이랑 빨간색 스타일 적용된것. -->
+         <!-- 즉 얘네들은 클래스 설정 안 되어 있는데 있는 것처럼 인식해서 스타일 적용된것임. -->
+        <h1>Lorem.</h1>
+        <h1>Temporibus!</h1>
+        <h1>Natus.</h1>
+        <h1>Iure.</h1>
+        <h1>Expedita!</h1>
+    </div>
+</body>
+</html>
