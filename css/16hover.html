@@ -1,0 +1,161 @@
+<!-- table에서 tbody안에 있는 목록에 hover가 바뀌게 + 줄마다 색깔 다른것도 같이 -->
+<!DOCTYPE html>
+<!-- html>head>style^body -->
+<html>
+<head>
+    <style>
+        table{
+            width: 400px;
+            /* border: 1px solid black; */
+            border-collapse: collapse;
+        }
+        th, td{
+            height: 36px;
+            border-bottom: 1px solid #aaa;
+        }
+        /*  th{
+                background-color: white;
+                color: black;
+        }
+            이걸 쓰면 제목은 당연히 hover가 안 가는데 아래처럼 tbody 해주고 하면 이걸 쓸 필요없음. */
+        table.striped tbody tr:nth-child(odd){
+            background-color: silver;
+         } /* 1 */
+        table.hover tbody tr:hover{
+            background-color: gray;
+        } /* 2 */
+
+    </style>
+</head>
+<body>
+    <!-- table>thead>tr>th*4>lorem0^^^tbody>tr*3>td*4>lorem0 -->
+    <table class="striped"> <!-- 스타일에서 1만 적용 -->
+        <thead>
+            <tr>
+                <th>Lorem.</th>
+                <th>Quidem.</th>
+                <th>Earum.</th>
+                <th>Iusto?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+                <td>Dolores.</td>
+                <td>Minus.</td>
+                <td>Fuga!</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Ipsum!</td>
+                <td>Nemo.</td>
+                <td>Earum.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Earum?</td>
+                <td>Earum?</td>
+                <td>Molestiae?</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <table class="hover"> <!-- 스타일에서 2만 적용 -->
+        <thead>
+            <tr>
+                <th>Lorem.</th>
+                <th>Quibusdam!</th>
+                <th>Modi.</th>
+                <th>Atque?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+                <td>Sint.</td>
+                <td>Dolores.</td>
+                <td>Excepturi!</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Saepe.</td>
+                <td>Nemo!</td>
+                <td>Iste.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Sunt.</td>
+                <td>Esse!</td>
+                <td>Veritatis!</td>
+            </tr>
+        </tbody>
+    </table>
+
+<hr>
+    <table class="striped hover"> <!-- 스타일에서 1,2 적용 -->
+        <thead>
+            <tr>
+                <th>Lorem.</th>
+                <th>Praesentium.</th>
+                <th>Quisquam.</th>
+                <th>Natus.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+                <td>Quisquam!</td>
+                <td>Architecto!</td>
+                <td>Repellat.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Repellendus.</td>
+                <td>Reprehenderit?</td>
+                <td>Voluptates.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Quasi?</td>
+                <td>Ea?</td>
+                <td>Vel.</td>
+            </tr>
+        </tbody>
+    </table>
+
+<hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Lorem.</th>
+                <th>Neque.</th>
+                <th>Nobis.</th>
+                <th>Nam.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+                <td>Optio?</td>
+                <td>Soluta.</td>
+                <td>Similique.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Ipsa.</td>
+                <td>Commodi.</td>
+                <td>Corrupti?</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Eius.</td>
+                <td>Voluptate!</td>
+                <td>Magni?</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
