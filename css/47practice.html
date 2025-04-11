@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
         .nemo-button {
             padding: 17px;
         }
@@ -40,30 +41,77 @@
         .circle-button:hover {
             background-color: darkgreen;
         }
-        .menu-container{
-            display: flex;
-        }
-        .cart-button{
-            margin-left: auto;
-        }
-        .logo{
-            display: flex;
-            align-items: center;
-        }
-    
-        .second-button{
-            padding: 10px;
-            
-            background-color: rgb(9, 9, 56);
-            color: white;
-        }
-        .second-button:hover{
-            background-color: black;
-        }
-        .second-container{
+
+        .menu-container {
             display: flex;
         }
 
+        .cart-button {
+            margin-left: auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .second-button {
+            padding: 5px;
+            flex: 1;
+            background-color: rgb(9, 9, 56);
+            color: white;
+        }
+
+        .second-button:hover {
+            background-color: black;
+        }
+
+        .second-button:active {
+            background-color: rgb(29, 122, 17);
+        }
+
+        .second-container {
+            display: flex;
+            margin-top: 5px;
+        }
+
+        
+        .left-list {
+            background-color: gainsboro;
+            width: 200px;
+            padding: 2px;
+            text-align: center;
+        }
+
+
+        #ll1 {
+            background-color: gainsboro;
+            width: 200px;
+            padding: 2px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .left-list:hover {
+            background-color: gray;
+        }
+
+        .para {
+            display: flex;
+        }
+
+        #topimg {
+            /* 높이 너비 다시 */
+            width: 500px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        #rightimg {
+            width: 50px;
+            height: 500px;
+            margin: 10px;
+        }
     </style>
 </head>
 
@@ -110,7 +158,7 @@
             HTML
         </div>
         <div class="second-button">
-            CSS            
+            CSS
         </div>
         <div class="second-button">
             JAVASCRIPT
@@ -131,6 +179,45 @@
             HOW TO
         </div>
     </div>
+
+    <div class="para">
+        <div class="L-list">
+            <div id="ll1">Lorem.</div>
+            <div class="left-list">Aliquid!</div>
+            <div class="left-list">Facere!</div>
+            <div class="left-list">Eveniet!</div>
+            <div class="left-list">Facere.</div>
+            <div class="left-list">Incidunt.</div>
+            <div class="left-list">Perferendis.</div>
+            <div class="left-list">Odit!</div>
+            <div class="left-list">Culpa.</div>
+            <div class="left-list">Totam?</div>
+            <div class="left-list">Aliquid!</div>
+            <div class="left-list">Facere!</div>
+            <div class="left-list">Eveniet!</div>
+            <div class="left-list">Facere.</div>
+            <div class="left-list">Incidunt.</div>
+            <div class="left-list">Perferendis.</div>
+            <div class="left-list">Odit!</div>
+            <div class="left-list">Culpa.</div>
+            <div class="left-list">Totam?</div>
+            <div class="left-list">Aliquid!</div>
+            <div class="left-list">Facere!</div>
+            <div class="left-list">Eveniet!</div>
+            <div class="left-list">Facere.</div>
+            <div class="left-list">Incidunt.</div>
+            <div class="left-list">Perferendis.</div>
+            <div class="left-list">Odit!</div>
+            <div class="left-list">Culpa.</div>
+            <div class="left-list">Totam?</div>
+        </div>
+
+        <img id="topimg" src="../html/말티즈.jpeg" alt=""> 
+        
+    </div>
+    
+
+
 </body>
 
 </html>
