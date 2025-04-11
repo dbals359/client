@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: beige;
+        }
+
+        p {
+            background-color: skyblue;
+        }
+
+        div:nth-child(odd) {
+            background-color: red;
+        }
+
+        div:nth-child(even) {
+            background-color: blue;
+        }
+
+        img {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- block : 가능한 넓은 너비, 새로운 줄에 배치 -->
+
+    <!-- 벽돌, 한줄에 벽돌 하나씩 쌓인다.-->
+    <!-- 블럭으로 배치되는 요소들은 한 줄을 다 차지함. -->
+    <h1>Lorem.</h1>
+    <h1>Quos!</h1>
+    <h1>Aliquam.</h1>
+    <h1>Consectetur.</h1>
+    <h1>Nesciunt!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, distinctio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, fuga sed fugiat blanditiis harum omnis
+        perferendis voluptas ea debitis quaerat, perspiciatis sapiente eius aspernatur saepe, id repudiandae temporibus.
+        Quae, accusantium!</p>
+    <div>Lorem, ipsum dolor.</div>
+    <div>Iste, in perferendis?</div>
+    <div>Voluptas, rerum cum!</div>
+    <!-- 제목요소 h, 문단요소 p, div 요소는 블럭요소임 -->
+
+    <!-- inline : 필요한 만큼 너비, 같은 줄에 배치 -->
+
+    <!-- 일반 텍스트, a, img, span -->
+    <!-- 다른 행인데 출력은 같은 줄에 옆에 바로 출력됨. -->
+    트럼프 일본 머스크
+    <a href="https://www.daum.net">daum</a>
+    <img src="../html/말티즈.jpeg" alt="">
+    <span>text1234</span>
+</body>
+
+</html>
