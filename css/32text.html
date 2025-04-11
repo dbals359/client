@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        
+        #para1{
+            font-size: 20px;
+        }
+        #para2{
+            font-size: 24px;
+        }
+        #para3{
+            font-size: 28px;
+        }
+        
+        #para4{
+            font-size: 1rem;
+        }
+        #para5{
+            font-size: 0.5rem;
+        }
+        #para6{
+            font-size: 1.5rem;
+        }
+        #para7{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- p#para$*10>lorem2 -->
+     <!-- px 사용해서 20 24 28 -->
+    <p id="para1">Lorem, ipsum.</p>
+    <p id="para2">Optio, nisi?</p>
+    <p id="para3">Ratione, aspernatur.</p>
+
+    <!-- rem 사용해서 20 10 30 40 -->
+    <p id="para4">Atque, veritatis?</p>
+    <p id="para5">Aperiam, quia.</p>
+    <p id="para6">Odit, enim.</p>
+    <p id="para7">Magni, id.</p>
+
+    
+    <!-- 폰트 크기 지정 안 하면 부모 폰트 크기를 상속받음 -->
+     <!-- 여기서 부모가 body -->
+      <!-- 근데 body 폰트 크기  지정 안 해서 결국 html 폰트 크기를 받아서 20px로 나옴-->
+       <!-- html 위에 style 지우면 브라우저 기본 폰트 크기가 지정됨 16px 나올거임 아마 -->
+    <p id="para8">Eius, illo.</p>
+    <p id="para9">Tenetur, nobis.</p>
+    <p id="para10">Quia, fugit.</p>
+</body>
+</html>
