@@ -82,8 +82,9 @@
         .main-content-container {
             display: flex;
             height: 100vh;
-            margin-top: 114px;
+            margin-top: 110px;
         }
+
 
         .side-menu {
             width: 200px;
@@ -150,79 +151,93 @@
             padding-left: 35px;
         }
 
-        .fixed-top-menu{
+        /* 상단 바 2개 고정시키기 */
+        /* 창크기에 따라 자리 멀어지고 가까워지는게 사라짐,, */
+        .fixed-bar{
             position: fixed;
             top: 0px;
-            left: 0px;
-            width: 100vw; /* 이것만 하면 오른쪽이 좀 밀려서?*/
-            padding: 0px 24px 0px 8px; /* 얘랑 */
-            box-sizing: border-box; /* 얘 해줘야함 */
-            background-color: white; /* 두번째 상단바 배경색 적용 안 되는 이유? */
+            background-color: white;
         }
+        #fb-cart{
+            position: relative;
+            right: 10px;
+        }
+        #fb-sign{
+            position: relative;
+            right: 10px;
+        }
+        #f-log{
+            position: relative;
+            right: 0px;
+        }
+
+        .fixed-second{
+            position: fixed;
+            top: 50px;
+        } 
+
     </style>
 </head>
 
 <body>
-    <div class="fixed-top-menu">
-        <div class="menu-container">
-            <div class="logo">
-                <span>
-                    W
-                </span>
-            </div>
-            <div class="nemo-button">
-                Tutorials
-                <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div class="nemo-button">
-                Exercises
-                <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div class="nemo-button">
-                certificates
-                <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div class="nemo-button">
-                Services
-                <i class="fa-solid fa-caret-down"></i>
-            </div>
-
-            <div class="cart-button">
-                <span>
-                    <span><!-- style="color: plum;" -->
-                        <i class="fa-solid fa-cart-shopping" style="color: #B197FC;"></i>
-                    </span>
-                    <!-- 이렇게 해도 되고 span 해서 해도 되고 -->
-                    Get Certified
-                </span>
-            </div>
-
-            <div class="circle-button move-right">
-                <span>
-                    Sign Up
-                </span>
-            </div>
-            <div class="circle-button left-padding">
-                <span>
-                    Log in
-                </span>
-            </div>
+    <div class="menu-container fixed-bar">
+        <div class="logo">
+            <span>
+                W
+            </span>
+        </div>
+        <div class="nemo-button">
+            Tutorials
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="nemo-button">
+            Exercises
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="nemo-button">
+            certificates
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="nemo-button">
+            Services
+            <i class="fa-solid fa-caret-down"></i>
         </div>
 
-        <!-- 두번째 상단바 -->
-        <!-- .second-top-bar>.second-menu-item*10>lorem0 -->
-        <div class="second-top-bar">
-            <div class="second-menu-item">Lorem.</div>
-            <div class="second-menu-item">Corporis!</div>
-            <div class="second-menu-item">Rem!</div>
-            <div class="second-menu-item">Odit.</div>
-            <div class="second-menu-item">Possimus.</div>
-            <div class="second-menu-item">Quis?</div>
-            <div class="second-menu-item">Quis.</div>
-            <div class="second-menu-item">Velit!</div>
-            <div class="second-menu-item">Quaerat?</div>
-            <div class="second-menu-item">Architecto.</div>
+        <div class="cart-button" id="fb-cart">
+            <span>
+                <span><!-- style="color: plum;" -->
+                    <i class="fa-solid fa-cart-shopping" style="color: #B197FC;"></i>
+                </span>
+                <!-- 이렇게 해도 되고 span 해서 해도 되고 -->
+                Get Certified
+            </span>
         </div>
+
+        <div class="circle-button move-right" id="fb-sign">
+            <span>
+                Sign Up
+            </span>
+        </div>
+        <div class="circle-button left-padding" id="fb-log">
+            <span>
+                Log in
+            </span>
+        </div>
+    </div>
+
+    <!-- 두번째 상단바 -->
+    <!-- .second-top-bar>.second-menu-item*10>lorem0 -->
+    <div class="second-top-bar  fixed-second">
+        <div class="second-menu-item">Lorem.</div>
+        <div class="second-menu-item">Corporis!</div>
+        <div class="second-menu-item">Rem!</div>
+        <div class="second-menu-item">Odit.</div>
+        <div class="second-menu-item">Possimus.</div>
+        <div class="second-menu-item">Quis?</div>
+        <div class="second-menu-item">Quis.</div>
+        <div class="second-menu-item">Velit!</div>
+        <div class="second-menu-item">Quaerat?</div>
+        <div class="second-menu-item">Architecto.</div>
     </div>
 
     <!-- .main-content-container>.side-menu+.main-content+.ad-container -->
