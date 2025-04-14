@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            display: none;
+            background-color: white;
+            border: 1px solid black;
+            width: 300px;
+        }
+        h3{
+            margin: 0;
+        }
+        h3:hover{
+            background-color: gainsboro;
+        }
+
+        h1 {
+            background-color: gainsboro;
+            width: 300px;
+            margin: 0;
+        }
+
+        h1:hover + .item{
+            position: absolute;
+            display: block;
+        }
+
+        .container {
+            position: relative;
+        }
+        p{
+            background-color: skyblue;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hover Over Me!</h1>
+        <div class="item">
+            <h3>Link 1</h3>
+            <h3>Link 2</h3>
+            <h3>Link 3</h3>
+        </div>
+    </div>
+    <div>
+        <p>Lorem.</p>
+        <p>Dolor!</p>
+        <p>Accusantium.</p>
+    </div>
+</body>
+
+</html>
