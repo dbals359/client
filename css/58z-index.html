@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: skyblue;
+            position: relative;
+        }
+
+        .container h1:nth-child(odd) {
+            background-color: gold;
+        }
+
+        .container h1:nth-child(even) {
+            background-color: rosybrown;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .container*10>h1#item*2>lorem1 -->
+    <style>
+        #item1 {
+            position: absolute;
+            top: 10px;
+            z-index: 7;
+        }
+
+        #item2 {
+            position: absolute;
+            top: 30px;
+            /* z축에서 크기가 클수록 내 눈에 가까워짐 */
+            z-index: 5;
+        }
+    </style>
+    <div class="container">
+        <h1 id="item1">Lorem.</h1>
+        <h1 id="item2">Architecto?</h1>
+    </div>
+
+    <style>
+        #item3, #item4{
+            position: absolute;
+        }
+        #item3{
+            top: 10px;
+        }
+        #item4{
+            top: 22px;
+            opacity: 0.5; /* 요소 전체의 투명도 */
+            /* 그래서 텍스트도 투명해짐 */
+        }
+    </style>
+
+    <div class="container">
+        <h1 id="item3">Lorem.</h1>
+        <h1 id="item4">Modi.</h1>
+    </div>
+
+
+    <style>
+        #item5, #item6{
+            position: absolute;
+        }
+        #item5{
+            top: 10px;
+        }
+        #item6{
+            top: 22px;
+            /* 아래는 배경만 투명도 지정한거라 텍스트는 진하게 나옴 */
+            background-color: rgba(188, 143, 143, 0.596); 
+        }
+    </style>
+    <div class="container">
+        <h1 id="item5">Lorem.</h1>
+        <h1 id="item6">Tempora?</h1>
+    </div>
+    <div class="container">
+        <h1 id="item">Lorem.</h1>
+        <h1 id="item">Quasi?</h1>
+    </div>
+    <div class="container">
+        <h1 id="item">Lorem.</h1>
+        <h1 id="item">Ducimus?</h1>
+    </div>
+    <div class="container">
+        <h1 id="item">Lorem.</h1>
+        <h1 id="item">Officia?</h1>
+    </div>
+    <div class="container">
+        <h1 id="item">Lorem.</h1>
+        <h1 id="item">Exercitationem?</h1>
+    </div>
+    <div class="container">
+        <h1 id="item">Lorem.</h1>
+        <h1 id="item">Excepturi.</h1>
+    </div>
+    <div class="container">
+        <h1 id="item">Lorem.</h1>
+        <h1 id="item">Consequuntur!</h1>
+    </div>
+    <div class="container">
+        <h1 id="item">Lorem.</h1>
+        <h1 id="item">Exercitationem.</h1>
+    </div>
+</body>
+
+</html>
