@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            display: none;
+            position: absolute;
+            background-color: white;
+            top: -10px;
+            left: 150px;
+            border: 1px solid black;
+        }
+        h1:hover + h3{
+            display: block;
+        }
+        .container{
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- absolute는 다른 요소들을 밀어내지 않음! 그래서 약간 콤보상자 쓸 때 나오는 거 같은 느낌 -->
+    <!-- (.container>(h1>lorem1^h3>lorem1))*10 -->
+     <!-- h1을 호버했ㅇㄹ 때 h3이 나오도록 -->
+    <div class="container">
+        <h1>Lorem.</h1>
+        <h3>Lorem.</h3>
+    </div>
+    <div class="container">
+        <h1>Incidunt!</h1>
+        <h3>Autem.</h3>
+    </div>
+    <div class="container">
+        <h1>Aliquid?</h1>
+        <h3>At!</h3>
+    </div>
+    <div class="container">
+        <h1>Ex?</h1>
+        <h3>Vero!</h3>
+    </div>
+    <div class="container">
+        <h1>Pariatur?</h1>
+        <h3>A.</h3>
+    </div>
+    <div class="container">
+        <h1>Ducimus?</h1>
+        <h3>Numquam?</h3>
+    </div>
+    <div class="container">
+        <h1>Ipsa.</h1>
+        <h3>Doloremque?</h3>
+    </div>
+    <div class="container">
+        <h1>Eveniet.</h1>
+        <h3>Dolore.</h3>
+    </div>
+    <div class="container">
+        <h1>Non.</h1>
+        <h3>Nesciunt?</h3>
+    </div>
+    <div class="container">
+        <h1>Deleniti.</h1>
+        <h3>Eaque?</h3>
+    </div>
+
+</body>
+
+</html>
