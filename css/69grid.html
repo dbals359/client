@@ -16,13 +16,70 @@
         .row>div:nth-child(even) {
             background-color: beige;
         }
+
+        .row>div:nth-child(1){
+            background-color: cornflowerblue;
+        }
+        .row>div:nth-child(2){
+            background-color: gainsboro;
+        }
+        .row>div:nth-child(3){
+            background-color: paleturquoise;
+        }
+        .row>div:nth-child(4){
+            background-color: orange;
+        }
+        .row>div:nth-child(5){
+            background-color: pink;
+        }
+        .row>div:nth-child(6){
+            background-color: plum;
+        }
+
+        .N{
+            display: none;
+        }
     </style>
 </head>
 
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">header</div>
+            <div class="col-12">content</div>
+            <div class="col-12">sign up</div>
+            <div class="col-12">feature</div>
+            <div class="col-12">feature</div>
+            <div class="col-12">feature</div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">header</div>
+            <div class="col-12">content</div>
+            <div class="col-12 col-md-6">sign up</div>
+            <div class="col-12 col-md-6">feature</div>
+            <div class="col-12 col-md-6">feature</div>
+            <div class="col-12 col-md-6">feature</div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">header</div>
+            <div class="col-12">content</div>
+            <div class="col-12">sign up</div>
+            <div class="col-12 col-lg-4">feature</div>
+            <div class="col-12 col-lg-4">feature</div>
+            <div class="col-12 col-lg-4">feature</div>
+        </div>
+    </div>
+
+    <hr>
     <!-- breakpoints 사용하기 -->
     <!-- 창크기에 따라서 몇개씩 자를건지?  -->
-    <div class="container">
+    <div class="container N">
         <div class="row">
             <!-- div.col*12{$} -->
             <div class="col-12">1</div>
@@ -41,7 +98,7 @@
     </div>
     <hr>
     <!-- .container>.row>.col-12*12{$} -->
-    <div class="container">
+    <div class="container N">
         <div class="row">
             <div class="col-12 col-md-6">1</div>
             <div class="col-12 col-md-6">2</div>
@@ -59,7 +116,7 @@
     </div>
     <hr>
     <!-- .container>.row>.col-12.col-md-6*12{$} -->
-    <div class="container">
+    <div class="container N">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4">1</div>
             <div class="col-12 col-md-6 col-lg-4">2</div>
