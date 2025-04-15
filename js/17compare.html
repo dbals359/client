@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // number, string 섞어서 비교
+        // <, >, <=, >= : number로 변환해서 비교
+        
+        let a=3;
+        let b=5;
+        console.log(a<b); // true
+        let c="3"
+        let d="12"
+        console.log(c<d); // false // 3이 1보다 크므로 
+
+        let e="3"
+        let f=12;
+        console.log(e<f); // true // 문자열 3이 숫자 3으로 변환되어 비교했기 때문
+
+        // 가능한 같은 타입끼리 비교하기
+        // 웬만해선 섞지 말기
+        
+        // string, number 섞을 때
+        // === : false
+        // !== : true
+        let g ="3"
+        let h=3;
+        console.log(g === h); // 무조건 false
+        console.log(g !== h); // 무조건 true
+        
+        // 가끔 쓴다 이거는
+        // string, number 섞을 때
+        // == : number로 변환해서 비교
+        // != : number로 변환해서 비교
+        console.log(g == h); // true
+        console.log(g != h); // false
+        
+        
+        
+    </script>
+</body>
+
+</html>
