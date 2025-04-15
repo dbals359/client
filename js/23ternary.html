@@ -16,35 +16,24 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
-        // 문자열 연결연산자(concatenate) : +
-        
-        let a="hello";
-        let b="js";
-        console.log(a+b);
-        
-        let c="도널드"
-        let d=" 트럼프"
-        console.log(c+d);
-        console.log(d+c);
-        
-        // 
-        let e = "3"
-        let f = "4"
-        console.log(e+f); // 34
-        let g = 3
-        let h = 4
-        console.log(g+h); // 7
+        // 삼항, 조건(ternary, conditional) 연산자
+        // 항1 ? 항2 : 항3 ->기호가 두개인거
+        // 연산결과는 항2 or 항3
+        // 항1이 true면 항2
+        // 항1이 false면 항3
 
-        // +에 하나라도 string이면 연결연산자
-        console.log(e+h); // 34
+        console.log(true ? 10 : 20);    // 10
+        console.log(false ? 10 : 20);   // 20
         
-        // 순서대로 연산됨. 
-        console.log(e+g+h); // 334
-        console.log(g+h+e); // 73
-        console.log(g+(h+e)); // 343
+        let age=15;
+        let res=age<20? "청소년":"성인";
+
+        console.log(res); // 청소년
         
-        
-        
+        age=30;
+        res=age<20? "청소년":"성인";
+        console.log(res); // 성인
+
     </script>
 </body>
 
