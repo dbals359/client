@@ -11,28 +11,27 @@
 </head>
 
 <body>
-    <!-- input#input1+br+button.btn.btn-primary+hr+h3#result -->
-    나이 : <input type="text" id="input1">
-    <br>
-    <button class="btn btn-primary">결과</button>
-    <hr>
-    <h3 id="result"></h3>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
-        function check() {
-            let age = document.querySelector("#input1").value;
-            age = Number(age);
+        // function name(params) {
+        //    params에 관한것 
+        // }
 
-            if (age < 18) {
-                document.querySelector("#result").innerText = "투표 불가능";    // 왜 이렇게
-            } else {
-                document.querySelector("#result").innerHTML = "투표 가능";      // 다르게 쓰셨ㄴ을까
-            }
+        // function의 () : 파라미터(매개변수, parameter)
+        // 함수 호출할 때 값을 받음
+        function myCode(p1){ // p1이 파라미터
+            console.log("hi", p1);
         }
-        document.querySelector("button").onclick = check;
+
+        myCode(9); // argument(인자, 인수, 아규먼트) : 함수 호출할 때 던져준 값
+        myCode(10) // 10이 argument
+
+        // *참고*
+        // parameter와 argument는 바꾸어 사용 가능(모호하게 사용됨)
+        // 문맥에 맞게 써야함.
     </script>
 </body>
 
