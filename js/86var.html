@@ -38,20 +38,25 @@
         function myCode(){
             console.log("myCode 함수1");
         }
+        myCode();
+
+
         var yourCode = function(){              // 얘를 덮어서
             console.log("yourCode함수1");
         }
 
-        if(true){
-            function myCode(){
+        if(false){
+            function myCode(){                  // 얘는 hoisting 돼서
                 console.log("myCode 함수2");
             }
             var yourCode = function(){          // 얘가 
-            console.log("yourCode함수2");
+                console.log("yourCode함수2");
             }
             myCode();
             yourCode();
         }
+
+
         myCode();
         yourCode();                             // 얘는 함수2가 나온는겨
 
