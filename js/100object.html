@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+
+        let b="hi";
+        let c="hola"
+        let d="안녕";
+        let address="jeju"
+
+        let a={
+            address: "Seoul",
+            print: function(a){
+                console.log(a);
+            },
+            show: function (b) {
+                let d = "안녕하세요"
+                console.log(b);
+                console.log(c);
+                console.log(d);
+                
+            },
+            display: function(c){
+                // let address="busan" // 주석처리하면 jeju로 감
+                console.log(c);
+                console.log(address); // jeju
+                // 메소드에서 프로퍼티 접근하기
+                console.log(this.address); // seoul
+            }
+        }
+
+        a.print(33);
+        a.show("hello");
+        a.display("곤니찌와")
+
+        let e={
+            firstName : "elon",
+            lastName : "musk",
+            // 일반 함수 this : 이 메소드를 가진 객체, 즉 여기선 e안에있는 것들 중에서 찾는거
+            printFullName: function(){
+                console.log(this.firstName, this.lastName);
+            }
+        }
+        e.printFullName(); // elon musk
+
+
+        let firstName="알버트";
+        let lastName="아인슈타인";
+
+        window.firstName="albert";
+        window.lastName="trump";
+
+        let f={
+            firstName: "donald",
+            lastName:"trump",
+            // arrow function this : 정의될 때의 객체, 즉 전체 객체를 의미함
+            printFullName: ()=>{
+                console.log(this.firstName, this.lastName);
+                // window에 있는 걸 가르킴
+            }
+        }
+        f.printFullName();
+
+        // 대부분 arrow function을 쓰는데
+        // 객체 안의 것을 가르키려면(this.뭐시기 쓰려면)
+        // 일반 function으로 해야함
+
+    </script>
+</body>
+
+</html>

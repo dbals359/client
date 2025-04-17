@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        function afunc() {
+            return 5;
+        }
+
+        function bfunc() {
+            // console.log("리턴된 함수0");
+            return function(){
+                console.log("리턴된 함수");
+            }
+        }
+
+        let i=afunc();
+        console.log(i);
+
+
+
+        let j=bfunc();
+        j();
+    
+        let k=bfunc;    // 이거는 함수가 되는거고
+        // 82번 파일보기
+
+        let l=bfunc();  // 이거는 함수가 실행되어 리턴된 값을 받음.
+
+        k();
+        l();
+        
+    </script>
+</body>
+
+</html>
