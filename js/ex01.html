@@ -16,9 +16,114 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
-        for (let count = 0; count < 5; count++) {
-            console.log("text");
+        let d={value: 77};
+        let e={value: 77};
+        // d=e; // 이렇게 하면 둘이 같은 주소를 갖게 되어(같은 참조값) 
+        // 주소 안의 값이 바뀌면 둘 다 값이 바뀌어 출력력
+        e.value=88;
+        console.log(d.value); // 77
+        console.log(e.value); // 88
+
+        console.log("-------------------");
+        
+
+        function func2(){
+            return {
+                value: 55
+            }
         }
+
+        let b=func2();
+        console.log(b.value); // 55
+        let c=func2();
+        console.log(c.value); // 55
+        c.value=66;
+        console.log(c.value); // 66
+        console.log(b.value); // 55
+
+
+
+
+        /*
+        let b="hi";
+        let c="hola"
+        let d="안녕";
+        let address="jeju"
+
+        let a={
+            address: "Seoul",
+            print: function(a){
+                console.log(a);
+            },
+            show: function (b) {
+                let d = "안녕하세요"
+                console.log(b);
+                console.log(c);
+                console.log(d);
+                
+            },
+            display: function(c){
+                // let address="busan" // 주석처리하면 jeju로 감
+                console.log(c);
+                console.log(address); // jeju
+                // 메소드에서 프로퍼티 접근하기
+                console.log(this.address); // seoul
+            }
+        }
+
+        a.print(33);
+        a.show("hello");
+        a.display("곤니찌와")
+
+        let e={
+            firstName : "elon",
+            lastName : "musk",
+            // 일반 함수 this : 이 메소드를 가진 객체, 즉 여기선 e안에있는 것들 중에서 찾는거
+            printFullName: function(){
+                console.log(this.firstName, this.lastName);
+            }
+        }
+        e.printFullName(); // elon musk
+
+
+        let firstName="알버트";
+        let lastName="아인슈타인";
+
+        window.firstName="albert";
+        window.lastName="trump";
+
+        let f={
+            firstName: "donald",
+            lastName:"trump",
+            // arrow function this : 정의될 때의 객체, 즉 전체 객체를 의미함
+            printFullName: ()=>{
+                console.log(this.firstName, this.lastName);
+                // window에 있는 걸 가르킴
+            }
+        }
+        f.printFullName();
+        */
+        // 대부분 arrow function을 쓰는데
+        // 객체 안의 것을 가르키려면(this.뭐시기 쓰려면)
+        // 일반 function으로 해야함
+        
+
+
+
+        // let a={name: "elon", age: 55}
+        // a.name="ddjd"
+        // a["age"]=77
+        // console.log(a.name);
+        // console.log(a.age);
+        
+
+        // for (let count = 0; count < 5; count++) {
+        //     console.log("text");
+        // }
+        
+
+        
+        
     </script>
 </body>
 
