@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>내 웹 페이지</title>
+</head>
+
+<body>
+    <!-- h1>lorem1^p>lorem3+span>lorem1 -->
+    <h1>Lorem.</h1>
+    <p>Lorem, ipsum dolor.<span>Lorem.</span></p>
+
+    <script>
+        // 이 파일 중요하대요 졸지마 신유망 ㅠㅜ
+
+        // DOM
+        // Document Object Model -> 앞글자만 따서 DOM
+        // javascript는 dom을 활용해서 문서를 읽거나 조작할 수 있다.
+
+        // 문서를 객체로 만든 형태(모델)
+        // tag 하나하나가 다 객체
+        // 부모자식으로 엮어있음
+        // 가장 상위(html위에)에 document라는 객체가 붙어있음
+        // document를 통해 다른 element를 잘 찾아갈 수 있음
+
+        let a = document.querySelector("span")
+        console.log(a);
+        let b= document.querySelector("p")
+        console.log(b);
+        console.log(document.querySelector("h1"));
+        
+        a.innerHTML="Hello"
+        console.log(a);
+        
+
+        let c = document.querySelector("h1")
+        c.innerHTML="HEELO DOM"
+        // 자바스크립트로 조작하면 실제 문서가 조작된다.
+    </script>
+</body>
+
+</html>
