@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <style>
+        .done {
+            text-decoration-line: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- input#input1+button#btn1{+}+hr+ul#list1 -->
+    <input type="text" id="input1">
+    <button id="btn1">+</button>
+    <hr>
+    <ul id="list1">
+        <!-- <li> ㅇㅇ <button>완료</button> <button>삭제</button> </li> -->
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // 입력해서 + 누르면 리스트 추가되고 완료취소하면서 --- 되는 거 확인하고, 삭제하면 리스트 사라지는거
+        document.querySelector("#btn1").addEventListener("click", function () {
+
+            // 입력값이랑 버튼들 순서대로 받기
+            let v = document.querySelector("#input1").value;    // 입력값 문자열로 반환
+            let t = `<li>${v} 
+                    <button class="line">완료</button>
+                    <button class="del">삭제</button>
+                    </li>`;  // 입력값 리스트로 받음
+
+            let o = document.querySelector("#list1").innerHTML; // list1을 HTML 코드로 가져옴
+            document.querySelector("#list1").innerHTML = t + o;
+
+            // 순서대로 받는 방법 2
+            // 해보려고 했는데 얘는 좀 복잡해질듯? 
+            // 그래서 위와 같은 방법을 선호하는듯!
+            // let v = document.querySelector("#input1").value;
+            // let l = document.createElement("li")
+            // l.textContent = v;
+            // document.querySelector("#list1").prepend(l);
+
+
+
+
+            // 완료/취소 취소선 생성삭제
+            // 뭐가 중복된듯??
+            // 한꺼번에 선이 취소및생성됨
+            // 버튼의 글씨는 누르는것만 바뀜
+            let buttons_line = document.querySelectorAll(".line");
+            for (let i = 0; i < buttons_line.length; i++) {
+                buttons_line[i].addEventListener("click", () => {
+                    buttons_line[i].parentElement.classList.toggle("done")
+                    if (buttons_line[i].parentElement.classList.contains("done")) {
+                        buttons_line[i].textContent = "취소"
+                    } else {
+                        buttons_line[i].textContent = "완료"
+                    }
+                })
+            }
+
+
+            // 삭제하기
+            let buttons_del = document.querySelectorAll(".del");
+            for (let i = 0; i < buttons_del.length; i++) {
+                buttons_del[i].addEventListener("click", function () {
+                    buttons_del[i].parentElement.remove();
+                })
+            }
+        })
+
+        // 1. button에 class명 부여해서 하는 것 !!! -> 요놈이 되었습미다~
+
+        // 2. 특정 button에 class 부여해서 하는 것
+    </script>
+</body>
+
+</html>

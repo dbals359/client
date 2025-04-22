@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div id="box1">
+        <div id="box2">
+            <h1>Lorem.</h1>              
+            <p>Lorem, ipsum dolor.</p>    
+        </div>
+    </div>
+
+    <div id="box3">
+        <div id="box4">
+            <h1>Lorem.</h1>
+            <p>Lorem, ipsum dolor.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        let a = document.querySelector("h1")
+        console.log(a);
+        
+        let b = document.querySelectorAll("h1")
+        console.log(b[1]);
+        
+        let c = document.querySelector("#box2")
+        console.log(c);
+        let d = a.parentElement; // 처음 나오는 h1의 부모요소니까
+        console.log(d); // 박스2
+        console.log(d.parentElement); // 박스2의 부모요소니까 박스1
+
+        console.log("---부모, 부모의 부모요소 찾아서 출력---");
+        
+        // b[1] 객체 기준 부모, 부모의 부모를 찾아서 출력
+        console.log(b[1].parentElement); // 두번째 나오는 h1의 부모요소니까 박스4
+        console.log(b[1].parentElement.parentElement); // 박스4의 부모요소니까 박스3
+        
+        console.log("---형제(다음에 나오는, 이전에 나오는) 요소 출력---");
+        // 형제
+        console.log(a.nextElementSibling);  // 처음 나오는 h1의 형제 요소로 박스2안에 있는 p
+        let e = a.nextElementSibling // 얘는 위와 같은 결과
+
+        console.log(e.previousElementSibling); // p의 전에 있는 형제요소로 박스2안에 있는 h1
+        
+   
+        // b[1](즉 박스4안에 있는 h1임)의 다음 형제 nextElementSibling 찾아서 출력
+        console.log(b[1].nextElementSibling); // 박스4안에 p
+        
+
+        console.log("----------자식 요소 출력------------");
+        // 자식요소
+        let f = document.querySelector("#box2") // 박스2 선택 즉 박스2오ㅓㅏ 그 안에 h1,p를 가져온겨
+        let g = f.children; // 그의 자식들을 가져옴
+        console.log(g[0]); // h1
+        console.log(g[1]); // p
+        
+        // 자식 요소 찾기
+        let h = document.querySelector("#box3")
+        // box3 손자로 있는 h1, p요소 찾아서 출력
+        // 부모의 부모처럼, 자식의 자식은 손자가 되어 다음과 같이 출력 가능
+        console.log(h.children[0].children[0]); // h1
+        console.log(h.children[0].children[1]); // p
+        
+
+        // parentElement
+        // children
+        // nextElementSibling
+        // previousElementSibling
+        // 문서가 가족관계로,.,.
+    </script>
+</body>
+
+</html>
